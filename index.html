@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
+
+    <!-- Google Fonts -->
+
+    <!-- First 2 line build connection with server -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- exaxt google font ko import krwaa rhe hai -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-   
+    <!-- Wrapper -->
+    <div
+        class="wrapper bg-[url('/assets/gradient-bg.jpg')] bg-cover bg-no-repeat bg-center w-[100vw] h-[100vh] flex flex-col items-center overflow-x-hidden">
+
+        <!-- Main-container -->
+
+        <div class="py-8 flex flex-col justify-center gap-[7.4rem] w-11/12 max-w-[480px] mx-auto">
+
+            <!-- game-info -->
+            <div
+                class="game-info bg-[#ffffff26] text-white border-[1px] border-[#ffffff26] rounded-[1rem] px-4 py-2 text-center cursor-pointer text-sm w-[10rem] mx-auto">
+                Current Player-X
+
+            </div>
+
+            <!-- Tic-Tac-Toe -->
+
+            <div
+                class="tick-tac-toe grid grid-cols-3 text-white aspect-square bg-[#ffffff26] border-[1px] rounded-[1rem] border-[#ffffff26] p-8 w-[95%] max-w-[20rem] mx-auto">
+
+                <!-- Box1 -->
+                <div class="box box1"></div>
+
+                <!-- Box2 -->
+                <div class="box box2"></div>
+
+
+                <!-- Box3 -->
+                <div class="box box3"></div>
+
+                <!-- Box4 -->
+                <div class="box box4"></div>
+
+                <!-- Box5 -->
+                <div class="box box5"></div>
+
+                <!-- Box6 -->
+                <div class="box box6"></div>
+
+                <!-- Box7 -->
+                <div class="box box7"></div>
+
+                <!-- Box8 -->
+                <div class="box box8"></div>
+
+                <!-- Box9 -->
+                <div class="box box9"></div>
+            </div>
+
+            <!-- new-game btn -->
+
+            <button
+                class="new-game-btn px-4 py-1 text-white rounded-[1rem] border-[#ffffff26] bg-[#ffffff26] border-[1px] w-[10rem] mx-auto cursor-pointer text-sm">
+                New Game
+            </button>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
